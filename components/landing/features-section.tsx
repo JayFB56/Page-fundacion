@@ -5,27 +5,27 @@ import { useEffect, useRef, useState } from "react";
 const features = [
   {
     number: "01",
-    title: "Autonomous Execution",
-    description: "Deploy AI agents that work independently. They analyze, decide, and execute complex multi-step tasks without human intervention.",
-    stats: { value: "99.7%", label: "task completion" },
+    title: "¿Quiénes somos?",
+    description: "FUNDACION EMPRENDE CON AMOR, reconocida con las siglas FUNDECA, creada a través de la resolución administrativa Nro. 0041 del 20 de noviembre del 2019 del Ministerio de Inclusión Económica y Social del Ecuador. Nos ubicamos en la ciudadela Valle Hermoso de la parroquia Simón Plata Torres, Provincia de Esmeraldas, Ecuador. Somos una organización benéfica dedicada a ayudar a los necesitados y dar oportunidades de empleo a personas que no reciben oportunidades de trabajo.",
+    stats: { value: "2019", label: "año de fundación" },
   },
   {
     number: "02",
-    title: "Distributed Computing",
-    description: "Offload compute-heavy tasks to our global network. Your agents run on optimized infrastructure across 50+ regions worldwide.",
-    stats: { value: "50+", label: "global regions" },
+    title: "Nuestra Misión",
+    description: "Apoyamos a emprendedores a que saquen adelante sus emprendimientos. Recurrimos a padrinos o donantes que apadrinen a un emprendedor en Ecuador. Trabajamos para compensar las injusticias creando oportunidades de trabajo para los más necesitados.",
+    stats: { value: "FUNDECA", label: "Fundación Emprende con Amor" },
   },
   {
     number: "03",
-    title: "Multi-Agent Orchestration",
-    description: "Coordinate teams of specialized agents. They communicate, delegate, and collaborate to solve complex problems together.",
-    stats: { value: "1000x", label: "parallel execution" },
+    title: "Nuestra Visión",
+    description: "Desde nuestros inicios, hemos trabajado tiempo completo para expandir nuestras causas y ayudar a quienes lo necesitan. Su cooperación ayuda a mejorar la comunidad. Ayudar al prójimo nunca ha sido tan sencillo.",
+    stats: { value: "Ecuador", label: "Esmeraldas" },
   },
   {
     number: "04",
-    title: "Secure Sandboxing",
-    description: "Each agent runs in isolated environments. Full audit trails, encrypted execution, and zero data leakage between tasks.",
-    stats: { value: "0", label: "data breaches" },
+    title: "Nuestros Objetivos",
+    description: "Asegurarnos de que los grupos más vulnerables de la provincia de Esmeraldas estén seguros y puedan satisfacer sus necesidades más básicas creando oportunidades laborales. Eliminar la pobreza mediante el trabajo digno y la protección del medio ambiente.",
+    stats: { value: "Valle Hermoso", label: "Simón Plata Torres" },
   },
 ];
 
@@ -147,34 +147,35 @@ export function FeaturesSection() {
 
   return (
     <section
-      id="features"
+      id="nosotros"
       ref={sectionRef}
-      className="relative py-24 lg:py-32 overflow-hidden"
+      className="relative py-24 lg:py-32 overflow-hidden bg-background"
     >
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         {/* Header - Full width with diagonal layout */}
         <div className="relative mb-24 lg:mb-32">
           <div className="grid lg:grid-cols-12 gap-8 items-end">
             <div className="lg:col-span-7">
-              <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6">
+              <span className="inline-flex items-center gap-3 text-sm font-mono text-foreground/50 mb-6">
                 <span className="w-12 h-px bg-foreground/30" />
-                Capabilities
+                Nosotros
               </span>
               <h2
                 className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9] transition-all duration-1000 ${
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
               >
-                Intelligent
+                Quiénes somos
                 <br />
-                <span className="text-muted-foreground">workers.</span>
+                <span className="text-muted-foreground">y qué hacemos.</span>
               </h2>
             </div>
             <div className="lg:col-span-5 lg:pb-4">
-              <p className={`text-xl text-muted-foreground leading-relaxed transition-all duration-1000 delay-200 ${
+              <p className={`text-xl text-foreground/70 leading-relaxed transition-all duration-1000 delay-200 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}>
-                Deploy autonomous AI agents that execute complex tasks across distributed infrastructure. No supervision required.
+                Somos una organización benéfica dedicada a brindar asistencia a los más necesitados. 
+                Si le gustaría contribuir con fondos o como voluntario, póngase en contacto con nosotros hoy mismo.
               </p>
             </div>
           </div>
@@ -219,6 +220,31 @@ export function FeaturesSection() {
               {/* Fade left edge into black */}
               <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent" />
             </div>
+          </div>
+
+          {/* Feature cards grid */}
+          <div className="lg:col-span-12 grid md:grid-cols-3 gap-4 lg:gap-6">
+            {features.slice(1).map((feature, index) => (
+              <div
+                key={feature.number}
+                className={`relative p-8 bg-black border border-foreground/10 overflow-hidden transition-all duration-700 ${
+                  isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+                }`}
+                style={{ transitionDelay: `${(index + 1) * 100}ms` }}
+              >
+                <span className="font-mono text-sm text-muted-foreground">{feature.number}</span>
+                <h3 className="text-2xl lg:text-3xl font-display mt-4 mb-4">
+                  {feature.title}
+                </h3>
+                <p className="text-base text-muted-foreground leading-relaxed mb-6">
+                  {feature.description}
+                </p>
+                <div>
+                  <span className="text-3xl lg:text-4xl font-display">{feature.stats.value}</span>
+                  <span className="block text-xs text-muted-foreground font-mono mt-1">{feature.stats.label}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

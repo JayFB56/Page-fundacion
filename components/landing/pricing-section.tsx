@@ -5,56 +5,55 @@ import { ArrowRight, Check, Zap } from "lucide-react";
 
 const plans = [
   {
-    name: "Explorer",
-    description: "For tinkering and small automations",
-    price: { monthly: 0, annual: 0 },
+    name: "Principiante",
+    description: "Membresía básica para comenzar a apoyar",
+    price: { monthly: null, annual: null },
     features: [
-      "3 concurrent agents",
-      "1,000 tasks/month",
-      "Community support",
-      "Basic logging",
-      "Public integrations",
+      "Apoyo a programas sociales",
+      "Acceso a eventos",
+      "Información de actividades",
+      "Boletín informativo",
+      "Certificado de membresía",
     ],
-    cta: "Start free",
+    cta: "Más información",
     highlight: false,
   },
   {
-    name: "Builder",
-    description: "For teams shipping with agents",
-    price: { monthly: 79, annual: 65 },
+    name: "Estudiante",
+    description: "Para estudiantes que quieren contribuir",
+    price: { monthly: null, annual: null },
     features: [
-      "25 concurrent agents",
-      "50,000 tasks/month",
-      "Priority support",
-      "Full audit trails",
-      "Private integrations",
-      "Team workspaces",
-      "Custom agent roles",
+      "Todos los beneficios básicos",
+      "Descuentos en eventos",
+      "Participación en actividades",
+      "Oportunidades de voluntariado",
+      "Red de contactos",
+      "Talleres exclusivos",
+      "Certificado de participación",
     ],
-    cta: "Start trial",
+    cta: "Únete ahora",
     highlight: true,
   },
   {
-    name: "Scale",
-    description: "For agent-first organizations",
+    name: "Completa",
+    description: "Compromiso total con nuestra causa",
     price: { monthly: null, annual: null },
     features: [
-      "Unlimited agents",
-      "Unlimited tasks",
-      "24/7 dedicated support",
-      "On-premise deployment",
-      "SLA guarantee",
-      "Custom LLM routing",
-      "Advanced security",
-      "Dedicated compute",
+      "Todos los beneficios anteriores",
+      "Miembro honorario",
+      "Invitación a juntas directivas",
+      "Reportes de impacto",
+      "Reconocimiento público",
+      "Eventos exclusivos",
+      "Acceso prioritario",
+      "Donación deducible de impuestos",
     ],
-    cta: "Contact sales",
+    cta: "Contáctenos",
     highlight: false,
   },
 ];
 
 export function PricingSection() {
-  const [isAnnual, setIsAnnual] = useState(true);
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -71,21 +70,21 @@ export function PricingSection() {
   }, []);
 
   return (
-    <section id="pricing" ref={sectionRef} className="relative py-32 lg:py-40">
+    <section id="donar" ref={sectionRef} className="relative py-32 lg:py-40">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         {/* Header - Dramatic offset */}
         <div className="grid lg:grid-cols-12 gap-8 mb-20">
           <div className="lg:col-span-7">
             <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-8">
               <span className="w-12 h-px bg-foreground/30" />
-              Pricing
+              Membresías
             </span>
             <h2 className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9] transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}>
-              Pay for
+              Hazte
               <br />
-              <span className="text-stroke">results.</span>
+              <span className="text-stroke">miembro.</span>
             </h2>
           </div>
           
@@ -122,7 +121,7 @@ export function PricingSection() {
                   <div className="absolute -top-4 left-8 right-8 flex justify-center">
                     <span className="inline-flex items-center gap-2 px-4 py-2 bg-foreground text-background text-xs font-mono uppercase tracking-widest">
                       <Zap className="w-3 h-3" />
-                      Most Popular
+                      Recomendado
                     </span>
                   </div>
                 )}
@@ -139,21 +138,12 @@ export function PricingSection() {
 
                   {/* Price */}
                   <div className="mb-8">
-                    {plan.price.monthly !== null ? (
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-5xl lg:text-6xl font-display">
-                          ${isAnnual ? plan.price.annual : plan.price.monthly}
-                        </span>
-                        <span className="text-muted-foreground text-sm">/month</span>
-                      </div>
-                    ) : (
-                      <span className="text-4xl font-display">Custom</span>
-                    )}
-                    {plan.price.monthly !== null && plan.price.monthly > 0 && (
-                      <p className="text-xs text-muted-foreground mt-2 font-mono">
-                        {isAnnual ? "billed annually" : "billed monthly"}
-                      </p>
-                    )}
+                    <span className="text-5xl lg:text-6xl font-display">
+                      {plan.name === "Completa" ? "Total" : "Gratis"}
+                    </span>
+                    <p className="text-xs text-muted-foreground mt-2 font-mono">
+                      {plan.name === "Completa" ? "Comuníquese para más detalles" : "Sin costo, con amor"}
+                    </p>
                   </div>
 
                   {/* Features */}
@@ -190,19 +180,19 @@ export function PricingSection() {
           <div className="flex flex-wrap gap-6 text-sm text-muted-foreground">
             <span className="flex items-center gap-2">
               <Check className="w-4 h-4 text-[#eca8d6]" />
-              Encrypted execution
+              Respaldo del MIES
             </span>
             <span className="flex items-center gap-2">
               <Check className="w-4 h-4 text-[#eca8d6]" />
-              Full audit logs
+              Sin fines de lucro
             </span>
             <span className="flex items-center gap-2">
               <Check className="w-4 h-4 text-[#eca8d6]" />
-              Multi-model routing
+              100% dedicación social
             </span>
           </div>
-          <a href="#" className="text-sm underline underline-offset-4 hover:text-foreground transition-colors">
-            Compare all features
+          <a href="#contacto" className="text-sm underline underline-offset-4 hover:text-foreground transition-colors">
+            Contáctenos para más información
           </a>
         </div>
       </div>

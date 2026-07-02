@@ -2,16 +2,16 @@
 
 import { useEffect, useState, useRef } from "react";
 
-const regions = [
-  { name: "North America", nodes: 12, status: "operational" },
-  { name: "Europe", nodes: 8, status: "operational" },
-  { name: "Asia Pacific", nodes: 6, status: "operational" },
-  { name: "South America", nodes: 3, status: "operational" },
+const programs = [
+  { name: "Alimentos a domicilio", description: "Voluntarios que se reúnen para dar servicios caritativos", status: "Activo" },
+  { name: "Actividades extraescolares", description: "Apoyo educativo para niños y jóvenes", status: "Activo" },
+  { name: "Actividades adultos mayores", description: "Atención y acompañamiento", status: "Activo" },
+  { name: "Emprendimiento", description: "Apoyo a emprendedores locales", status: "Activo" },
 ];
 
 export function InfrastructureSection() {
   const [isVisible, setIsVisible] = useState(false);
-  const [activeRegion, setActiveRegion] = useState(0);
+  const [activeProgram, setActiveProgram] = useState(0);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -28,23 +28,23 @@ export function InfrastructureSection() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveRegion((prev) => (prev + 1) % regions.length);
+      setActiveProgram((prev) => (prev + 1) % programs.length);
     }, 3000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section id="infra" ref={sectionRef} className="relative py-32 lg:py-40 overflow-hidden">
+    <section id="programas" ref={sectionRef} className="relative py-32 lg:py-40 overflow-hidden bg-background">
         {/* Background accent — retiré, remplacé par l'image sphère */}
       
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         {/* Header */}
         <div className="mb-20">
-          <span className={`inline-flex items-center gap-4 text-sm font-mono text-muted-foreground mb-8 transition-all duration-700 ${
+          <span className={`inline-flex items-center gap-4 text-sm font-mono text-foreground/50 mb-8 transition-all duration-700 ${
             isVisible ? "opacity-100" : "opacity-0"
           }`}>
             <span className="w-12 h-px bg-foreground/20" />
-            Global infrastructure
+            Programas
           </span>
           
           <div className="grid lg:grid-cols-[auto_1fr] gap-8 lg:gap-16 items-stretch">
@@ -64,16 +64,17 @@ export function InfrastructureSection() {
               <h2 className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9] transition-all duration-1000 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}>
-                Global by
+                Nuestros
                 <br />
-                <span className="text-muted-foreground">default.</span>
+                <span className="text-muted-foreground">programas.</span>
               </h2>
 
-              <p className={`mt-8 text-xl text-muted-foreground leading-relaxed max-w-lg transition-all duration-1000 delay-100 ${
+              <p className={`mt-8 text-xl text-foreground/70 leading-relaxed max-w-lg transition-all duration-1000 delay-100 ${
                 isVisible ? "opacity-100" : "opacity-0"
               }`}>
-                Your agents run on distributed infrastructure across 29 regions.
-                Sub-50ms latency to 99% of the world.
+                En FUNDACION FUNDECA estamos comprometidos con ayudar a la comunidad de muchas formas.
+                Como una de las principales organizaciones benéficas, hemos trabajado día y noche para
+                asegurarnos de cumplir con nuestra misión.
               </p>
             </div>
           </div>
@@ -144,11 +145,11 @@ export function InfrastructureSection() {
             
             <div className="relative z-10">
               <div className="flex items-baseline gap-2 mb-4">
-                <span className="text-8xl lg:text-[10rem] font-display leading-none">29</span>
-                <span className="text-2xl text-muted-foreground">regions</span>
+                <span className="text-8xl lg:text-[10rem] font-display leading-none">4</span>
+                <span className="text-2xl text-muted-foreground">programas activos</span>
               </div>
               <p className="text-muted-foreground max-w-md">
-                Compute nodes distributed globally for maximum redundancy and minimum latency.
+                Programas diseñados para ayudar a los más necesitados de la provincia de Esmeraldas.
               </p>
             </div>
           </div>
@@ -158,42 +159,42 @@ export function InfrastructureSection() {
             <div className={`p-8 border border-foreground/10 bg-foreground/[0.02] transition-all duration-700 delay-100 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}>
-              <span className="text-5xl lg:text-6xl font-display">99.99%</span>
-              <span className="block text-sm text-muted-foreground mt-2">Uptime SLA</span>
+              <span className="text-5xl lg:text-6xl font-display">Alimentos</span>
+              <span className="block text-sm text-muted-foreground mt-2">a domicilio</span>
             </div>
             
             <div className={`p-8 border border-foreground/10 bg-foreground/[0.02] transition-all duration-700 delay-200 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}>
-              <span className="text-5xl lg:text-6xl font-display">&lt;50ms</span>
-              <span className="block text-sm text-muted-foreground mt-2">Global latency</span>
+              <span className="text-5xl lg:text-6xl font-display">Adultos</span>
+              <span className="block text-sm text-muted-foreground mt-2">mayores</span>
             </div>
           </div>
         </div>
 
-        {/* Region list */}
+        {/* Programs list */}
         <div className={`mt-12 grid grid-cols-2 lg:grid-cols-4 gap-4 transition-all duration-1000 delay-300 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}>
-          {regions.map((region, index) => (
+          {programs.map((program, index) => (
             <div
-              key={region.name}
+              key={program.name}
               className={`p-6 border transition-all duration-300 cursor-default ${
-                activeRegion === index 
+                activeProgram === index 
                   ? "border-foreground/30 bg-foreground/[0.04]" 
                   : "border-foreground/10"
               }`}
             >
               <div className="flex items-center gap-2 mb-3">
                 <span className={`w-2 h-2 rounded-full transition-colors ${
-                  activeRegion === index ? "bg-[#eca8d6]" : "bg-foreground/20"
+                  activeProgram === index ? "bg-[#eca8d6]" : "bg-foreground/20"
                 }`} />
                 <span className="text-xs font-mono text-muted-foreground uppercase tracking-wider">
-                  {region.status}
+                  {program.status}
                 </span>
               </div>
-              <span className="font-medium block mb-1">{region.name}</span>
-              <span className="text-sm text-muted-foreground">{region.nodes} nodes</span>
+              <span className="font-medium block mb-1">{program.name}</span>
+              <span className="text-sm text-muted-foreground">{program.description}</span>
             </div>
           ))}
         </div>

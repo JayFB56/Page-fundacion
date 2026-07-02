@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef } from "react";
 
-const words = ["automate", "delegate", "execute", "scale"];
+const words = ["emprender", "ayudar", "transformar", "crecer"];
 
 function BlurWord({ word, trigger }: { word: string; trigger: number }) {
   const letters = word.split("");
@@ -120,7 +120,7 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-start overflow-hidden bg-black">
+    <section id="hero" className="relative min-h-screen flex flex-col justify-center items-start overflow-hidden bg-black">
       {/* Background video */}
       <div className="absolute inset-0 z-0">
         <video
@@ -166,16 +166,26 @@ export function HeroSection() {
       
       <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-12 py-32 lg:py-40">
         <div className="lg:max-w-[55%]">
-        {/* Eyebrow */}
+        
+        {/* Foundation name */}
         <div 
-          className={`mb-8 transition-all duration-700 ${
+          className={`mb-4 transition-all duration-700 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <span className="inline-flex items-center gap-3 text-sm font-mono text-white/60">
-            <span className="w-8 h-px bg-white/30" />
-            Autonomous AI agents for distributed computing
+          <span className="text-2xl lg:text-3xl font-display text-white tracking-tight">
+            FUNDACION FUNDECA
           </span>
+        </div>
+
+        <div 
+          className={`mb-10 transition-all duration-700 delay-100 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+          }`}
+        >
+          <p className="text-base lg:text-lg text-white/70 font-mono leading-relaxed max-w-md">
+            Fundación Emprende con Amor — Esmeraldas, Ecuador
+          </p>
         </div>
         
         {/* Main headline */}
@@ -185,9 +195,8 @@ export function HeroSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <span className="block whitespace-nowrap">Distributed compute,</span>
+            <span className="block whitespace-nowrap">Apadrina a un</span>
             <span className="block whitespace-nowrap">
-              agents that{" "}
               <span className="relative inline-block">
                 <BlurWord word={words[wordIndex]} trigger={wordIndex} />
               </span>
@@ -205,9 +214,9 @@ export function HeroSection() {
       >
         <div className="max-w-[1400px] mx-auto flex items-start gap-10 lg:gap-20">
           {[
-            { value: "3500+", label: "autonomous agents active" },
-            { value: "99.7%", label: "distributed uptime" },
-            { value: "<50ms", label: "execution latency" },
+            { value: "2019", label: "año de fundación" },
+            { value: "Esmeraldas", label: "Ecuador" },
+            { value: "Únete", label: "sé parte del cambio" },
           ].map((stat) => (
             <div key={stat.label} className="flex flex-col gap-2">
               <span className="text-3xl lg:text-4xl font-display text-white">{stat.value}</span>

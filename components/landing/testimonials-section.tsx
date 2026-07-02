@@ -5,34 +5,38 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "Our agents handle 80% of our customer support tickets autonomously. The ROI was immediate.",
-    author: "Sarah Chen",
-    role: "CTO",
-    company: "Meridian Labs",
-    metric: { value: "80%", label: "Ticket resolution" },
+    quote: "Actúa como si todas tus acciones marcaran la diferencia entre muchos. Que les parece 'Lo hacen'.",
+    author: "Dr. Damian Vera Valencia",
+    role: "Fundador",
+    company: "FUNDACION FUNDECA",
+    metric: { value: "2019", label: "Año de fundación" },
   },
   {
-    quote: "We deployed research agents that work 24/7. They surface insights we'd never find manually.",
-    author: "Marcus Webb",
-    role: "Head of Research",
-    company: "Flux Systems",
-    metric: { value: "10x", label: "Research output" },
+    quote: "Hemos trabajado tiempo completo para expandir nuestras causas y ayudar a quienes lo necesitan. Su cooperación ayuda a mejorar la comunidad.",
+    author: "FUNDECA",
+    role: "Fundación Emprende con Amor",
+    company: "Ecuador",
+    metric: { value: "Esmeraldas", label: "Ubicación" },
   },
   {
-    quote: "The multi-agent orchestration is incredible. Complex workflows that took weeks now run in hours.",
-    author: "Elena Rodriguez",
-    role: "VP Engineering",
-    company: "Beacon AI",
-    metric: { value: "40x", label: "Faster workflows" },
+    quote: "Apoyamos a emprendedores a que saquen adelante sus emprendimientos. Recurrimos a padrinos o donantes que apadrinen a un emprendedor en Ecuador.",
+    author: "FUNDECA",
+    role: "Resolución Nro. 0041",
+    company: "MIES",
+    metric: { value: "Valle Hermoso", label: "Simón Plata Torres" },
   },
   {
-    quote: "Security was our biggest concern. The sandboxing and audit trails gave us full confidence.",
-    author: "James Liu",
-    role: "CISO",
-    company: "Prism Analytics",
-    metric: { value: "0", label: "Security incidents" },
+    quote: "Ayudar al prójimo nunca ha sido tan sencillo. Cada pequeño esfuerzo sirve de mucho. Todo tipo de ayuda es inmensamente apreciado.",
+    author: "FUNDECA",
+    role: "Organización benéfica",
+    company: "Esmeraldas - Ecuador",
+    metric: { value: "Únete", label: "Sé parte del cambio" },
   },
 ];
+
+const asciiBackground = Array.from({ length: 60 }, (_, i) =>
+  Array.from({ length: 100 }, (_, j) => ((i * 17 + j * 13) % 7 === 0 ? '"' : ' ')).join("")
+).join("\n");
 
 export function TestimonialsSection() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -81,27 +85,23 @@ export function TestimonialsSection() {
     <section ref={sectionRef} className="relative py-32 lg:py-40 bg-foreground text-background overflow-hidden">
       {/* ASCII background pattern */}
       <div className="absolute inset-0 font-mono text-[10px] text-background/[0.02] leading-tight overflow-hidden whitespace-pre select-none">
-        {Array.from({ length: 60 }, (_, i) => 
-          Array.from({ length: 100 }, () => 
-            Math.random() > 0.7 ? '"' : ' '
-          ).join("")
-        ).join("\n")}
+        {asciiBackground}
       </div>
 
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12">
         {/* Header */}
         <div className="flex items-center justify-between mb-20">
           <div>
-            <span className="inline-flex items-center gap-3 text-sm font-mono text-background/40 mb-4">
-              <span className="w-12 h-px bg-background/20" />
-              Testimonials
-            </span>
-            <h2 className={`text-4xl lg:text-5xl font-display transition-all duration-1000 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-            }`}>
-              Trusted by teams
-              <span className="text-background/40"> worldwide.</span>
-            </h2>
+              <span className="inline-flex items-center gap-3 text-sm font-mono text-background/40 mb-4">
+                <span className="w-12 h-px bg-background/20" />
+                Testimonios
+              </span>
+              <h2 className={`text-4xl lg:text-5xl font-display transition-all duration-1000 ${
+                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+              }`}>
+                Lo que dicen
+                <span className="text-background/40"> de nosotros.</span>
+              </h2>
           </div>
           
           {/* Navigation arrows */}
@@ -191,12 +191,12 @@ export function TestimonialsSection() {
             {/* Company list */}
             <div className="mt-4 pt-6 border-t border-background/10">
               <span className="text-xs font-mono text-background/30 uppercase tracking-widest block mb-4">
-                Featured companies
+                Nuestra historia
               </span>
               <div className="flex flex-wrap gap-3">
                 {testimonials.map((t, idx) => (
                   <button
-                    key={t.company}
+                    key={idx}
                     onClick={() => goTo(idx)}
                     className={`px-4 py-2 text-sm border transition-all ${
                       idx === activeIndex 
@@ -204,7 +204,7 @@ export function TestimonialsSection() {
                         : "border-background/10 text-background/40 hover:border-background/30"
                     }`}
                   >
-                    {t.company}
+                    {t.metric.value}
                   </button>
                 ))}
               </div>

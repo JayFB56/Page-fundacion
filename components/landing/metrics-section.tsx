@@ -4,25 +4,25 @@ import { useEffect, useState, useRef } from "react";
 
 const metrics = [
   { 
-    value: 12847392, 
+    value: 2019, 
     suffix: "", 
     prefix: "",
-    label: "Tasks completed today",
-    sublabel: "by 23,847 active agents",
+    label: "Fundada",
+    sublabel: "Resolución Nro. 0041 - MIES",
   },
   { 
-    value: 99, 
-    suffix: ".99%", 
+    value: 100, 
+    suffix: "%", 
     prefix: "",
-    label: "Availability",
-    sublabel: "across all regions",
+    label: "Dedicación",
+    sublabel: "a ayudar a los necesitados",
   },
   { 
-    value: 340, 
-    suffix: "ms", 
-    prefix: "<",
-    label: "Average execution",
-    sublabel: "p99 latency",
+    value: 1, 
+    suffix: "", 
+    prefix: "",
+    label: "Comunidad",
+    sublabel: "Esmeraldas, Ecuador",
   },
 ];
 
@@ -249,19 +249,19 @@ export function MetricsSection() {
             <div className="flex items-center gap-4 mb-6">
               <span className="flex items-center gap-2 px-3 py-1 bg-[#eca8d6]/10 text-[#eca8d6] text-xs font-mono">
                 <span className="w-2 h-2 rounded-full bg-[#eca8d6] animate-pulse" />
-                LIVE
+                FUNDECA
               </span>
               <span className="text-sm font-mono text-muted-foreground">
-                {time ? `${time.toLocaleTimeString("en-GB")} UTC` : ""}
+                Esmeraldas - Ecuador
               </span>
             </div>
 
             <h2 className={`text-6xl md:text-7xl lg:text-[140px] font-display tracking-tight leading-[0.95] transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}>
-              Real-time
+              Nuestra
               <br />
-              <span className="text-muted-foreground">agent metrics.</span>
+              <span className="text-muted-foreground">historia.</span>
             </h2>
           </div>
         </div>
@@ -328,11 +328,11 @@ export function MetricsSection() {
         <div className={`mt-16 pt-8 border-t border-foreground/10 flex flex-wrap items-center gap-x-12 gap-y-4 text-sm font-mono text-muted-foreground transition-all duration-1000 delay-500 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}>
-          <span>OpenAI GPT-4 Turbo</span>
-          <span>Anthropic Claude 3</span>
-          <span>Mistral Large</span>
-          <span>Llama 3</span>
-          <span className="text-foreground">+12 more models</span>
+          <span>Ministerio de Inclusión Económica y Social</span>
+          <span>Resolución Nro. 0041</span>
+          <span>20 de noviembre 2019</span>
+          <span>Ciudadela Valle Hermoso</span>
+          <span className="text-foreground">Simón Plata Torres</span>
         </div>
       </div>
     </section>

@@ -4,34 +4,34 @@ import { ArrowUpRight } from "lucide-react";
 import { useEffect, useRef } from "react";
 
 const footerLinks = {
-  Product: [
-    { name: "Agent capabilities", href: "#features" },
-    { name: "How it works", href: "#how-it-works" },
-    { name: "Pricing", href: "#pricing" },
-    { name: "Integrations", href: "#integrations" },
+  Nosotros: [
+    { name: "Inicio", href: "#hero" },
+    { name: "Quiénes somos", href: "#nosotros" },
+    { name: "Servicios", href: "#servicios" },
+    { name: "Programas", href: "#programas" },
   ],
-  Developers: [
-    { name: "Documentation", href: "#developers" },
-    { name: "Agent SDK", href: "#" },
-    { name: "API Reference", href: "#developers" },
-    { name: "Status", href: "#" },
+  Participa: [
+    { name: "Involúcrese", href: "#involucrese" },
+    { name: "Membresías", href: "#donar" },
+    { name: "Donar", href: "#donar" },
+    { name: "Voluntariado", href: "#involucrese" },
   ],
-  Company: [
-    { name: "About", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Careers", href: "#", badge: "Hiring" },
-    { name: "Contact", href: "#" },
+  Información: [
+    { name: "Novedades", href: "#novedades" },
+    { name: "Transparencia", href: "#transparencia" },
+    { name: "Preguntas frecuentes", href: "#faq" },
+    { name: "Contacto", href: "#contacto" },
   ],
   Legal: [
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" },
-    { name: "Security", href: "#security" },
+    { name: "Resolución Nro. 0041", href: "#transparencia" },
+    { name: "MIES", href: "#transparencia" },
+    { name: "Esmeraldas - Ecuador", href: "#contacto" },
   ],
 };
 
 const socialLinks = [
+  { name: "Facebook", href: "#" },
   { name: "Twitter", href: "#" },
-  { name: "GitHub", href: "#" },
   { name: "LinkedIn", href: "#" },
 ];
 
@@ -114,13 +114,13 @@ export function FooterSection() {
           <div className="grid grid-cols-2 md:grid-cols-6 gap-12 lg:gap-8">
             {/* Brand Column */}
             <div className="col-span-2">
-              <a href="#" className="inline-flex items-center gap-2 mb-6">
-                <span className="text-2xl font-display text-white">COMPUTE</span>
-                <span className="text-xs text-white/40 font-mono">TM</span>
+              <a href="#hero" className="inline-flex items-center gap-2 mb-6">
+                <span className="text-2xl font-display text-white">FUNDECA</span>
+                <span className="text-xs text-white/40 font-mono">Fundación</span>
               </a>
 
               <p className="text-white/50 leading-relaxed mb-8 max-w-xs text-sm">
-                Autonomous AI agents for distributed computing. Delegate complex tasks to intelligent workers.
+                FUNDACION EMPRENDE CON AMOR, reconocida con las siglas FUNDECA. Organización benéfica dedicada a ayudar a los necesitados y dar oportunidades de empleo en Esmeraldas, Ecuador.
               </p>
 
               {/* Social Links */}
@@ -167,13 +167,13 @@ export function FooterSection() {
         {/* Bottom Bar */}
         <div className="py-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-white/30">
-            &copy; 2025 COMPUTE. All rights reserved.
+            &copy; 2021 FUNDACION FUNDECA. Creada con amor en Esmeraldas, Ecuador.
           </p>
 
           <div className="flex items-center gap-4 text-sm text-white/30">
             <span className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[#eca8d6]" />
-              All agents operational
+              Construyamos un mejor futuro
             </span>
           </div>
         </div>

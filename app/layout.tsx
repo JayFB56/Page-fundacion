@@ -21,9 +21,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'COMPUTE - AI Agents for Distributed Computing',
-  description: 'Deploy autonomous AI agents on distributed infrastructure. Offload complex tasks to intelligent workers that run 24/7.',
-  generator: 'v0.app',
+  title: 'FUNDACION EMPRENDE CON AMOR "FUNDECA" | Construyamos un mejor futuro',
+  description: 'Fundación benéfica dedicada a ayudar a los necesitados y dar oportunidades de empleo a personas vulnerables en Esmeraldas, Ecuador. Apadrina a un emprendedor.',
 }
 
 export default function RootLayout({
@@ -32,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={`${instrumentSans.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
         {children}
         <Analytics />

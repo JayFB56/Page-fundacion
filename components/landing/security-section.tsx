@@ -1,36 +1,36 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import { Shield, Lock, Eye, FileCheck } from "lucide-react";
+import { Shield, Heart, Users, FileText } from "lucide-react";
 
-const securityFeatures = [
+const legalFeatures = [
   {
     icon: Shield,
-    title: "Isolated execution",
-    description: "Each agent runs in its own secure sandbox.",
+    title: "Resolución Administrativa",
+    description: "Creada mediante Resolución Nro. 0041 del 20 de noviembre del 2019 del Ministerio de Inclusión Económica y Social del Ecuador.",
     image: "/images/isolated.jpg",
   },
   {
-    icon: Lock,
-    title: "Encrypted memory",
-    description: "Data encrypted at rest and in transit.",
+    icon: Heart,
+    title: "Misión social",
+    description: "Organización benéfica dedicada a ayudar a los necesitados y dar oportunidades de empleo a personas vulnerables.",
     image: "/images/encrypted.jpg",
   },
   {
-    icon: Eye,
-    title: "Full audit trails",
-    description: "Every action logged and inspectable.",
+    icon: Users,
+    title: "Compromiso comunitario",
+    description: "Trabajamos para compensar las injusticias creando oportunidades laborales y apoyando emprendedores.",
     image: "/images/audit.jpg",
   },
   {
-    icon: FileCheck,
-    title: "Permission boundaries",
-    description: "Principle of least privilege by design.",
+    icon: FileText,
+    title: "Transparencia",
+    description: "Toda donación se usa de la mejor forma posible para cambiar vidas. Contáctenos para conocer más.",
     image: "/images/permissions.jpg",
   },
 ];
 
-const certifications = ["SOC 2", "ISO 27001", "HIPAA", "GDPR"];
+const certifications = ["MIES", "Ecuador", "Esmeraldas", "Valle Hermoso"];
 
 export function SecuritySection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -51,14 +51,13 @@ export function SecuritySection() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveFeature((prev) => (prev + 1) % securityFeatures.length);
+      setActiveFeature((prev) => (prev + 1) % legalFeatures.length);
     }, 3000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section id="security" ref={sectionRef} className="relative py-32 lg:py-40 overflow-hidden">
-      {/* Background accent removed */}
+    <section id="transparencia" ref={sectionRef} className="relative py-32 lg:py-40 overflow-hidden">
       
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         {/* Header */}
@@ -67,16 +66,16 @@ export function SecuritySection() {
             isVisible ? "opacity-100" : "opacity-0"
           }`}>
             <span className="w-12 h-px bg-foreground/20" />
-            Security
+            Transparencia
           </span>
           
           {/* Title — full width */}
           <h2 className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9] mb-12 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}>
-            Autonomous,
+            Información
             <br />
-            <span className="text-muted-foreground">not uncontrolled.</span>
+            <span className="text-muted-foreground">legal.</span>
           </h2>
           
           {/* Description — below title */}
@@ -84,7 +83,9 @@ export function SecuritySection() {
             isVisible ? "opacity-100" : "opacity-0"
           }`}>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-              Your agents are powerful but constrained. Enterprise-grade security ensures they only do what you allow.
+              FUNDACION EMPRENDE CON AMOR, reconocida con las siglas FUNDECA, fue creada a través de la
+              Resolución Administrativa Nro. 0041 del 20 de noviembre del 2019 del Ministerio de Inclusión
+              Económica y Social del Ecuador. Operamos con total transparencia y compromiso social.
             </p>
           </div>
         </div>
@@ -97,7 +98,7 @@ export function SecuritySection() {
           }`}>
             {/* Dynamic feature image with cross-fade — desktop only */}
             <div className="absolute inset-0 pointer-events-none items-center justify-end hidden lg:flex">
-              {securityFeatures.map((feature, index) => (
+              {legalFeatures.map((feature, index) => (
                 <img
                   key={feature.image}
                   src={feature.image}
@@ -109,10 +110,10 @@ export function SecuritySection() {
             </div>
             
             <div className="relative z-10">
-              <span className="font-mono text-sm text-muted-foreground">Active protection</span>
+              <span className="font-mono text-sm text-muted-foreground">Resolución Nro. 0041</span>
               <div className="mt-8">
-                <span className="text-7xl lg:text-8xl font-display">0</span>
-                <span className="block text-muted-foreground mt-2">Security incidents this year</span>
+                <span className="text-7xl lg:text-8xl font-display">2019</span>
+                <span className="block text-muted-foreground mt-2">Año de fundación oficial</span>
               </div>
             </div>
             
@@ -134,7 +135,7 @@ export function SecuritySection() {
 
           {/* Feature cards stack */}
           <div className="lg:col-span-5 flex flex-col gap-4">
-            {securityFeatures.map((feature, index) => (
+            {legalFeatures.map((feature, index) => (
               <div
                 key={feature.title}
                 className={`p-6 border transition-all duration-500 cursor-default ${
@@ -161,6 +162,35 @@ export function SecuritySection() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="mt-20 pt-16 border-t border-foreground/10">
+          <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-8">
+            <span className="w-12 h-px bg-foreground/30" />
+            Preguntas frecuentes
+          </span>
+          <h3 className="text-3xl lg:text-4xl font-display mb-10">Centro de ayuda</h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="p-6 border border-foreground/10">
+              <h4 className="font-medium mb-3 text-base">Si hago una donación, ¿puedo decidir a qué sería destinado mi dinero?</h4>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Escribe aquí tu respuesta, piensa bien en ella, escribe con claridad y considera usar ejemplos. Recuerda que tu lector desea saber más de tu empresa, así que proporciona todos los detalles que puedas.
+              </p>
+            </div>
+            <div className="p-6 border border-foreground/10">
+              <h4 className="font-medium mb-3 text-base">¿Qué distingue a FUNDACION FUNDECA de otras organizaciones similares?</h4>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Escribe aquí tu respuesta, piensa bien en ella, escribe con claridad y considera usar ejemplos. Recuerda que tu lector desea saber más de tu empresa, así que proporciona todos los detalles que puedas.
+              </p>
+            </div>
+            <div className="p-6 border border-foreground/10">
+              <h4 className="font-medium mb-3 text-base">¿A cuántas personas ayudan con su trabajo de beneficencia?</h4>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Escribe aquí tu respuesta, piensa bien en ella, escribe con claridad y considera usar ejemplos. Recuerda que tu lector desea saber más de tu empresa, así que proporciona todos los detalles que puedas.
+              </p>
+            </div>
           </div>
         </div>
       </div>

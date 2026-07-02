@@ -5,39 +5,21 @@ import { useEffect, useRef, useState } from "react";
 const steps = [
   {
     number: "01",
-    title: "Define",
-    subtitle: "your agent",
-    description: "Describe what your agent should do. Set its capabilities, constraints, and goals in natural language or code.",
-    code: `const researcher = new Agent({
-  role: 'Research Analyst',
-  capabilities: ['web', 'docs', 'api'],
-  memory: true,
-  autonomy: 'full'
-})`,
+    title: "Preparación de Alimentos",
+    subtitle: "Servicio",
+    description: "Una de las principales razones por las cuales se fundó FUNDACION FUNDECA fue para compensar las injusticias que recibe la gente creando oportunidades de trabajo para los más necesitados. Brindamos servicios de preparación de alimentos tanto para el sector público y privado. Hemos dedicado mucho tiempo y recursos a esta causa benéfica.",
   },
   {
     number: "02",
-    title: "Assign",
-    subtitle: "the task",
-    description: "Give your agent a mission. It breaks down complex tasks into steps and executes them autonomously.",
-    code: `await researcher.execute({
-  task: 'Analyze competitor pricing',
-  sources: ['public-data', 'news'],
-  output: 'structured-report',
-  deadline: '2h'
-})`,
+    title: "Mantenimiento General",
+    subtitle: "Servicio",
+    description: "Uno de nuestros objetivos es asegurarnos de que los grupos más vulnerables de la provincia de Esmeraldas estén seguros y puedan satisfacer sus necesidades más básicas creando oportunidades laborales como el servicio de mantenimiento general. Ayudamos a que las personas de la comunidad no dependan de otras sino del trabajo diario.",
   },
   {
     number: "03",
-    title: "Monitor",
-    subtitle: "& scale",
-    description: "Track progress in real-time. Spin up more agents as needed. Pay only for compute used.",
-    code: `optimus.dashboard({
-  agents: [researcher],
-  metrics: ['tasks', 'latency', 'cost'],
-  alerts: true
-})
-// 847 tasks completed today`,
+    title: "Limpieza General",
+    subtitle: "Servicio",
+    description: "Una de nuestras principales causas en FUNDACION FUNDECA es la protección del medio ambiente. Creamos el servicio de limpieza general para dar trabajo a muchas madres. Este es un problema que afecta muchas vidas en numerosas zonas de la provincia de Esmeraldas. Dedicamos gran parte de nuestros recursos a este problema.",
   },
 ];
 
@@ -67,7 +49,7 @@ export function HowItWorksSection() {
 
   return (
     <section
-      id="how-it-works"
+      id="servicios"
       ref={sectionRef}
       className="relative py-24 lg:py-32 bg-[oklch(0.09_0.01_260)] text-white overflow-hidden"
     >
@@ -81,16 +63,16 @@ export function HowItWorksSection() {
             <div className={`transition-all duration-1000 ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-12 opacity-0"}`}>
               <span className="inline-flex items-center gap-3 text-sm font-mono text-white/40 mb-8">
                 <span className="w-12 h-px bg-white/20" />
-                Process
+                Servicios
               </span>
             </div>
             
             <h2 className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.85] transition-all duration-1000 delay-100 ${
               isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
             }`}>
-              <span className="block">Define.</span>
-              <span className="block text-white/30">Deploy.</span>
-              <span className="block text-white/10">Scale.</span>
+              <span className="block">Cómo</span>
+              <span className="block text-white/30">ayudamos</span>
+              <span className="block text-white/10">a la comunidad.</span>
             </h2>
           </div>
 
