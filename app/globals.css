@@ -182,6 +182,14 @@
     background-color: oklch(0.10 0.008 260);
   }
 
+  .feather-overlay::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(ellipse 85% 75% at 50% 45%, transparent 30%, var(--background) 100%);
+  }
+
   .word-gradient {
     background: linear-gradient(
       45deg,

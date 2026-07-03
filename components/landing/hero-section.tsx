@@ -195,7 +195,7 @@ export function HeroSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <span className="block whitespace-nowrap">Apadrina a un</span>
+            <span className="block whitespace-nowrap">Apadrina a</span>
             <span className="block whitespace-nowrap">
               <span className="relative inline-block">
                 <BlurWord word={words[wordIndex]} trigger={wordIndex} />

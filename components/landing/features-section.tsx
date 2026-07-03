@@ -154,7 +154,7 @@ export function FeaturesSection() {
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         {/* Header - Full width with diagonal layout */}
         <div className="relative mb-24 lg:mb-32">
-          <div className="grid lg:grid-cols-12 gap-8 items-end">
+          <div className="grid lg:grid-cols-12 gap-8">
             <div className="lg:col-span-7">
               <span className="inline-flex items-center gap-3 text-sm font-mono text-foreground/50 mb-6">
                 <span className="w-12 h-px bg-foreground/30" />
@@ -170,8 +170,19 @@ export function FeaturesSection() {
                 <span className="text-muted-foreground">y qué hacemos.</span>
               </h2>
             </div>
-            <div className="lg:col-span-5 lg:pb-4">
-              <p className={`text-xl text-foreground/70 leading-relaxed transition-all duration-1000 delay-200 ${
+            <div className="lg:col-span-5 flex flex-col">
+              <div className={`transition-all duration-1000 delay-100 ${
+                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+              }`}>
+                <div className="relative w-full feather-overlay">
+                  <img
+                    src="/images/foto-equipo.webp"
+                    alt="Equipo de FUNDECA - Fundación Emprende con Amor"
+                    className="w-full h-auto max-h-[340px] object-scale-down"
+                  />
+                </div>
+              </div>
+              <p className={`text-xl text-foreground/70 leading-relaxed transition-all duration-1000 delay-200 mt-8 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}>
                 Somos una organización benéfica dedicada a brindar asistencia a los más necesitados. 
