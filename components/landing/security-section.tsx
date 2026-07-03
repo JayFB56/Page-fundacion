@@ -13,19 +13,19 @@ const legalFeatures = [
   {
     icon: Heart,
     title: "Misión social",
-    description: "Organización benéfica dedicada a ayudar a los necesitados y dar oportunidades de empleo a personas vulnerables.",
+    description: "Fundación dedicada al bienestar de niños, familias y personas en situación de vulnerabilidad, generando oportunidades de empleo digno e inclusión social.",
     image: "/images/encrypted.jpg",
   },
   {
     icon: Users,
     title: "Compromiso comunitario",
-    description: "Trabajamos para compensar las injusticias creando oportunidades laborales y apoyando emprendedores.",
+    description: "Trabajamos para construir una sociedad más justa, creando oportunidades laborales para personas vulnerables y apoyando a familias emprendedoras en Esmeraldas.",
     image: "/images/audit.jpg",
   },
   {
     icon: FileText,
     title: "Transparencia",
-    description: "Toda donación se usa de la mejor forma posible para cambiar vidas. Contáctenos para conocer más.",
+    description: "Garantizamos que cada donación se destina con total transparencia a programas que transforman la vida de niños, familias y comunidades vulnerables en Ecuador.",
     image: "/images/permissions.jpg",
   },
 ];
@@ -176,19 +176,19 @@ export function SecuritySection() {
             <div className="p-6 border border-foreground/10">
               <h4 className="font-medium mb-3 text-base">Si hago una donación, ¿puedo decidir a qué sería destinado mi dinero?</h4>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Escribe aquí tu respuesta, piensa bien en ella, escribe con claridad y considera usar ejemplos. Recuerda que tu lector desea saber más de tu empresa, así que proporciona todos los detalles que puedas.
+                Sí. Puedes indicar si deseas que tu donación se destine a programas específicos como alimentación infantil, apoyo educativo, actividades para adultos mayores o emprendimientos familiares. Nosotros te mantenemos informado del impacto de tu contribución.
               </p>
             </div>
             <div className="p-6 border border-foreground/10">
-              <h4 className="font-medium mb-3 text-base">¿Qué distingue a FUNDACION FUNDECA de otras organizaciones similares?</h4>
+              <h4 className="font-medium mb-3 text-base">¿Qué distingue a FUNDECA de otras organizaciones similares?</h4>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Escribe aquí tu respuesta, piensa bien en ella, escribe con claridad y considera usar ejemplos. Recuerda que tu lector desea saber más de tu empresa, así que proporciona todos los detalles que puedas.
+                Nos distingue nuestro compromiso directo con las comunidades de Esmeraldas, el respaldo del Ministerio de Inclusión Económica y Social del Ecuador, y un modelo de trabajo que combina empleo digno, programas sociales y el poder transformador del voluntariado.
               </p>
             </div>
             <div className="p-6 border border-foreground/10">
-              <h4 className="font-medium mb-3 text-base">¿A cuántas personas ayudan con su trabajo de beneficencia?</h4>
+              <h4 className="font-medium mb-3 text-base">¿A cuántas personas ayudan con sus programas sociales?</h4>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Escribe aquí tu respuesta, piensa bien en ella, escribe con claridad y considera usar ejemplos. Recuerda que tu lector desea saber más de tu empresa, así que proporciona todos los detalles que puedas.
+                A través de nuestros programas de alimentación, educación, empleo y acompañamiento, impactamos positivamente a cientos de niños, adolescentes, adultos mayores y familias en situación de vulnerabilidad en la provincia de Esmeraldas. Cada año seguimos creciendo gracias al apoyo de nuestros voluntarios y donantes.
               </p>
             </div>
           </div>

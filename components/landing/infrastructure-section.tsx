@@ -3,10 +3,10 @@
 import { useEffect, useState, useRef } from "react";
 
 const programs = [
-  { name: "Alimentos a domicilio", description: "Voluntarios que se reúnen para dar servicios caritativos", status: "Activo" },
-  { name: "Actividades extraescolares", description: "Apoyo educativo para niños y jóvenes", status: "Activo" },
-  { name: "Actividades adultos mayores", description: "Atención y acompañamiento", status: "Activo" },
-  { name: "Emprendimiento", description: "Apoyo a emprendedores locales", status: "Activo" },
+  { name: "Alimentos a domicilio", description: "Llevamos alimentos y esperanza a familias en situación de vulnerabilidad en Esmeraldas", status: "Activo" },
+  { name: "Actividades extraescolares", description: "Apoyo educativo y recreativo para niños y adolescentes de la comunidad", status: "Activo" },
+  { name: "Actividades adultos mayores", description: "Atención, compañía y cuidado para nuestros adultos mayores", status: "Activo" },
+  { name: "Emprendimiento", description: "Impulsamos emprendimientos familiares para generar ingresos y empleo digno", status: "Activo" },
 ];
 
 export function InfrastructureSection() {
@@ -72,9 +72,9 @@ export function InfrastructureSection() {
               <p className={`mt-8 text-xl text-foreground/70 leading-relaxed max-w-lg transition-all duration-1000 delay-100 ${
                 isVisible ? "opacity-100" : "opacity-0"
               }`}>
-                En FUNDACION FUNDECA estamos comprometidos con ayudar a la comunidad de muchas formas.
-                Como una de las principales organizaciones benéficas, hemos trabajado día y noche para
-                asegurarnos de cumplir con nuestra misión.
+                En FUNDECA diseñamos programas sociales que responden a las necesidades reales de niños,
+                adolescentes, familias y personas en situación de vulnerabilidad en la provincia de Esmeraldas.
+                Cada programa está pensado para generar un impacto positivo y duradero en nuestra comunidad.
               </p>
             </div>
           </div>
@@ -149,7 +149,7 @@ export function InfrastructureSection() {
                 <span className="text-2xl text-muted-foreground">programas activos</span>
               </div>
               <p className="text-muted-foreground max-w-md">
-                Programas diseñados para ayudar a los más necesitados de la provincia de Esmeraldas.
+                Programas diseñados para el bienestar de niños, familias y comunidades vulnerables en Esmeraldas.
               </p>
             </div>
           </div>

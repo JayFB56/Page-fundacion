@@ -120,7 +120,7 @@ export function FooterSection() {
               </a>
 
               <p className="text-white/50 leading-relaxed mb-8 max-w-xs text-sm">
-                FUNDACION EMPRENDE CON AMOR, reconocida con las siglas FUNDECA. Organización benéfica dedicada a ayudar a los necesitados y dar oportunidades de empleo en Esmeraldas, Ecuador.
+                FUNDACION EMPRENDE CON AMOR, reconocida con las siglas FUNDECA. Trabajamos por el bienestar de niños, familias y personas en situación de vulnerabilidad en Esmeraldas, Ecuador, a través de programas sociales, empleo digno y solidaridad comunitaria.
               </p>
 
               {/* Social Links */}
@@ -167,7 +167,7 @@ export function FooterSection() {
         {/* Bottom Bar */}
         <div className="py-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-white/30">
-            &copy; 2021 FUNDACION FUNDECA. Creada con amor en Esmeraldas, Ecuador.
+            &copy; 2021 FUNDACION FUNDECA. Construyendo esperanza y transformando vidas en Esmeraldas, Ecuador.
           </p>
 
           <div className="flex items-center gap-4 text-sm text-white/30">

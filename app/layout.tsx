@@ -21,8 +21,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'FUNDACION EMPRENDE CON AMOR "FUNDECA" | Construyamos un mejor futuro',
-  description: 'Fundación benéfica dedicada a ayudar a los necesitados y dar oportunidades de empleo a personas vulnerables en Esmeraldas, Ecuador. Apadrina a un emprendedor.',
+  title: 'FUNDACION EMPRENDE CON AMOR "FUNDECA" | Transformando vidas en Esmeraldas',
+  description: 'Fundación dedicada al bienestar de niños, familias y personas en situación de vulnerabilidad en Esmeraldas, Ecuador. Programas sociales, empleo digno y voluntariado. Únete y transforma vidas.',
 }
 
 export default function RootLayout({

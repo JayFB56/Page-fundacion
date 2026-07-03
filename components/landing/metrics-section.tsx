@@ -15,7 +15,7 @@ const metrics = [
     suffix: "%", 
     prefix: "",
     label: "Dedicación",
-    sublabel: "a ayudar a los necesitados",
+    sublabel: "al bienestar de niños, familias y comunidades",
   },
   { 
     value: 1, 

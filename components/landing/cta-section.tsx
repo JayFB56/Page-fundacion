@@ -57,8 +57,9 @@ export function CtaSection() {
                 </h2>
 
                 <p className="text-xl text-muted-foreground mb-12 leading-relaxed max-w-xl">
-                  Póngase en contacto con FUNDACION FUNDECA para conocer más sobre nuestro trabajo y sobre cómo donar.
-                  Le agradecemos su ayuda. Esmeraldas-Ecuador.
+                  Si deseas formar parte del cambio, ya sea como voluntario, aliado o donante,
+                  estaremos encantados de conocerte y trabajar juntos por una sociedad más solidaria.
+                  Cada acción, por pequeña que sea, transforma la vida de niños, familias y comunidades en Esmeraldas.
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-start gap-4">

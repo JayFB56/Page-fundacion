@@ -7,19 +7,19 @@ const steps = [
     number: "01",
     title: "Preparación de Alimentos",
     subtitle: "Servicio",
-    description: "Una de las principales razones por las cuales se fundó FUNDACION FUNDECA fue para compensar las injusticias que recibe la gente creando oportunidades de trabajo para los más necesitados. Brindamos servicios de preparación de alimentos tanto para el sector público y privado. Hemos dedicado mucho tiempo y recursos a esta causa benéfica.",
+    description: "Brindamos servicios de preparación de alimentos para el sector público y privado, generando empleo digno para madres, jóvenes y familias en situación de vulnerabilidad en Esmeraldas. Cada plato preparado representa una oportunidad de sustento y esperanza para quienes más lo necesitan.",
   },
   {
     number: "02",
     title: "Mantenimiento General",
     subtitle: "Servicio",
-    description: "Uno de nuestros objetivos es asegurarnos de que los grupos más vulnerables de la provincia de Esmeraldas estén seguros y puedan satisfacer sus necesidades más básicas creando oportunidades laborales como el servicio de mantenimiento general. Ayudamos a que las personas de la comunidad no dependan de otras sino del trabajo diario.",
+    description: "Ofrecemos servicios de mantenimiento general como una vía de empleo digno para personas en situación de vulnerabilidad en Esmeraldas. Creemos en el trabajo como herramienta de transformación social, permitiendo que familias enteras accedan a ingresos estables y mejoren su calidad de vida.",
   },
   {
     number: "03",
     title: "Limpieza General",
     subtitle: "Servicio",
-    description: "Una de nuestras principales causas en FUNDACION FUNDECA es la protección del medio ambiente. Creamos el servicio de limpieza general para dar trabajo a muchas madres. Este es un problema que afecta muchas vidas en numerosas zonas de la provincia de Esmeraldas. Dedicamos gran parte de nuestros recursos a este problema.",
+    description: "A través de nuestro servicio de limpieza general, generamos empleo para madres y jefas de hogar en situación de vulnerabilidad, al mismo tiempo que promovemos la protección del medio ambiente en Esmeraldas. Un trabajo digno que transforma realidades y construye un futuro más limpio para nuestras comunidades.",
   },
 ];
 

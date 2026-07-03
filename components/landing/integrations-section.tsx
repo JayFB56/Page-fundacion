@@ -6,52 +6,52 @@ const involucrateItems = [
   {
     title: "Voluntariado",
     category: "Ayuda directa",
-    description: "La generosidad es una de las fuerzas humanas más poderosas. En FUNDACION FUNDECA, aprovechamos los esfuerzos de nuestro personal y voluntarios para tener un efecto positivo sobre las vidas de quienes más ayuda necesitan. Nos encantaría que se una a nuestro equipo.",
+    description: "El voluntariado es el corazón de FUNDECA. Únete a nuestro equipo y transforma la vida de niños, familias y comunidades en situación de vulnerabilidad en Esmeraldas. Tu tiempo y dedicación pueden marcar la diferencia.",
   },
   {
     title: "Recaudación de fondos",
     category: "Donaciones",
-    description: "Hay muchas formas de contribuir a nuestras labores de beneficencia. Hasta el menor esfuerzo cuenta, en especial para los más necesitados. Conozca más sobre lo que hacemos y cómo puede brindar apoyo.",
+    description: "Organiza una recolecta de fondos con tus amigos, familiares o empresa. Cada contribución se convierte en alimentos, educación y esperanza para niños y familias vulnerables de Esmeraldas.",
   },
   {
     title: "Donativos temporada",
     category: "Fiestas",
-    description: "Utilice su talento para ayudar a nuestro personal y a la comunidad. Siempre estamos en busca de personas talentosas que gusten de dedicar tiempo a una buena causa. Si desea hacer una diferencia en la vida de otros, no hay mejor manera que participando con FUNDACION FUNDECA.",
+    description: "En temporada de fiestas, multiplicamos la solidaridad. Tus donativos llevan alegría, alimentos y regalos a niños, adultos mayores y familias que más lo necesitan en nuestra comunidad.",
   },
   {
     title: "Membresía principiante",
     category: "Afiliación",
-    description: "Regístrese hoy mismo. Su apoyo proporcionará fondos cruciales para nuestras actividades, eventos y programas. Juntos lograremos cambiar la forma en que se trata a los ciudadanos y nos aseguraremos de que haya mejoras.",
+    description: "Comienza tu camino como miembro FUNDECA. Tu apoyo mensual financia programas sociales que benefician directamente a niños, adolescentes y familias vulnerables en Esmeraldas. Juntos construimos un futuro más justo.",
   },
   {
     title: "Membresía estudiante",
     category: "Afiliación",
-    description: "Si quiere familiarizarse con el trabajo que hacemos, esta es una excelente manera de aprender lo básico. Su apoyo tendrá un gran impacto en los necesitados. Contáctenos para averiguar qué significa pertenecer a la fundación.",
+    description: "Ideal para estudiantes y jóvenes comprometidos con la solidaridad. Con tu membresía apoyas programas educativos y recreativos para niños y adolescentes, mientras te formas como agente de cambio en tu comunidad.",
   },
   {
     title: "Membresía completa",
     category: "Afiliación",
-    description: "A lo largo de los años, FUNDACION FUNDECA ha podido promover continuamente nuestras causas mediante las amables donaciones de nuestros miembros y colaboradores. Su contribución nos ayuda a seguir con nuestra labor benéfica.",
+    description: "Comprométete al máximo con nuestra causa. Como miembro completo, tus donaciones sostienen programas integrales de apoyo a niños, familias y personas en situación de vulnerabilidad en toda la provincia de Esmeraldas.",
   },
   {
     title: "Donación anual",
     category: "Donar",
-    description: "¿Quiere lograr un impacto positivo en la comunidad? Es tan simple como hacer una donación. Ninguna cantidad de tiempo o de dinero es demasiado pequeña o grande. Agradecemos toda la ayuda que nos pueda proporcionar.",
+    description: "Haz una donación anual y conviértete en un pilar fundamental para nuestros programas. Tu contribución sostenida nos permite planificar y ejecutar proyectos que transforman la vida de cientos de familias en Esmeraldas.",
   },
   {
     title: "Donación única",
     category: "Donar",
-    description: "Si le inspiran las causas que promueve FUNDACION FUNDECA, apreciaríamos mucho su apoyo. Done hoy. Es fácil y tendrá un enorme impacto en la vida de muchas personas necesitadas.",
+    description: "Cada donación, sin importar su tamaño, tiene un impacto real en la vida de niños, adolescentes y familias vulnerables. Tu generosidad se convierte en alimento, educación, empleo y esperanza para quienes más lo necesitan.",
   },
   {
     title: "Donación anual",
     category: "Donar",
-    description: "Agradecemos toda la ayuda que nos pueda proporcionar, y le garantizamos que se usará de la mejor forma posible. Contáctenos para conocer más sobre lo que hacemos con las donaciones que recibimos.",
+    description: "Tu donación anual nos permite mantener y expandir nuestros programas durante todo el año. Garantizamos que cada recurso se utiliza con transparencia y responsabilidad para maximizar el beneficio a nuestra comunidad.",
   },
   {
     title: "Grupo Directivo",
     category: "Gobernanza",
-    description: "Grupo directivo de FUNDACION FUNDECA. Únase a nuestro grupo público para participar en las decisiones y actividades de la fundación.",
+    description: "Únete a nuestro grupo directivo y participa en las decisiones estratégicas que guían el impacto social de FUNDECA en la provincia de Esmeraldas, siempre pensando en el bienestar de niños, familias y comunidades.",
   },
 ];
 
@@ -97,9 +97,9 @@ export function IntegrationsSection() {
         <p className={`mt-8 text-xl text-muted-foreground leading-relaxed max-w-lg mx-auto transition-all duration-1000 delay-100 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}>
-          ¿Busca cómo involucrarse con FUNDACION FUNDECA? Vea aquí las diferentes oportunidades disponibles.
-          Todo tipo de ayuda es inmensamente apreciado, ya sea que busque un trabajo de tiempo completo
-          o colaborar como voluntario en su tiempo libre.
+          ¿Quieres ser parte del cambio? En FUNDECA hay muchas formas de contribuir al bienestar de niños,
+          familias y comunidades vulnerables. Ya sea como voluntario, donante o miembro, tu ayuda
+          transforma vidas y construye esperanza en Esmeraldas.
         </p>
       </div>
 

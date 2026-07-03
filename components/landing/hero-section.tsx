@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef } from "react";
 
-const words = ["emprender", "ayudar", "transformar", "crecer"];
+const words = ["niños", "familias", "comunidades", "esperanza"];
 
 function BlurWord({ word, trigger }: { word: string; trigger: number }) {
   const letters = word.split("");
@@ -184,7 +184,7 @@ export function HeroSection() {
           }`}
         >
           <p className="text-base lg:text-lg text-white/70 font-mono leading-relaxed max-w-md">
-            Fundación Emprende con Amor — Esmeraldas, Ecuador
+            Transformando vidas mediante la solidaridad — Esmeraldas, Ecuador
           </p>
         </div>
         
@@ -216,7 +216,7 @@ export function HeroSection() {
           {[
             { value: "2019", label: "año de fundación" },
             { value: "Esmeraldas", label: "Ecuador" },
-            { value: "Únete", label: "sé parte del cambio" },
+            { value: "Voluntarios", label: "siempre bienvenidos" },
           ].map((stat) => (
             <div key={stat.label} className="flex flex-col gap-2">
               <span className="text-3xl lg:text-4xl font-display text-white">{stat.value}</span>

@@ -6,25 +6,25 @@ const features = [
   {
     number: "01",
     title: "¿Quiénes somos?",
-    description: "FUNDACION EMPRENDE CON AMOR, reconocida con las siglas FUNDECA, creada a través de la resolución administrativa Nro. 0041 del 20 de noviembre del 2019 del Ministerio de Inclusión Económica y Social del Ecuador. Nos ubicamos en la ciudadela Valle Hermoso de la parroquia Simón Plata Torres, Provincia de Esmeraldas, Ecuador. Somos una organización benéfica dedicada a ayudar a los necesitados y dar oportunidades de empleo a personas que no reciben oportunidades de trabajo.",
+    description: "FUNDACION EMPRENDE CON AMOR, reconocida con las siglas FUNDECA, fue creada mediante la Resolución Administrativa Nro. 0041 del 20 de noviembre del 2019 del Ministerio de Inclusión Económica y Social del Ecuador. Desde entonces, trabajamos incansablemente por el bienestar de niños, adolescentes, familias y personas en situación de vulnerabilidad en la provincia de Esmeraldas. Nuestra sede se encuentra en la ciudadela Valle Hermoso, parroquia Simón Plata Torres, y desde allí impulsamos programas que generan oportunidades, empleo digno y esperanza para quienes más lo necesitan.",
     stats: { value: "2019", label: "año de fundación" },
   },
   {
     number: "02",
     title: "Nuestra Misión",
-    description: "Apoyamos a emprendedores a que saquen adelante sus emprendimientos. Recurrimos a padrinos o donantes que apadrinen a un emprendedor en Ecuador. Trabajamos para compensar las injusticias creando oportunidades de trabajo para los más necesitados.",
+    description: "Trabajamos para mejorar la calidad de vida de niños, familias y comunidades en situación de vulnerabilidad en la provincia de Esmeraldas. A través de programas de apadrinamiento, voluntariado y donaciones, generamos oportunidades de empleo, apoyo educativo y acompañamiento social. Creemos en la solidaridad como motor de cambio y en el poder de cada persona para transformar realidades.",
     stats: { value: "FUNDECA", label: "Fundación Emprende con Amor" },
   },
   {
     number: "03",
     title: "Nuestra Visión",
-    description: "Desde nuestros inicios, hemos trabajado tiempo completo para expandir nuestras causas y ayudar a quienes lo necesitan. Su cooperación ayuda a mejorar la comunidad. Ayudar al prójimo nunca ha sido tan sencillo.",
+    description: "Soñamos con una sociedad donde cada niño, adolescente y familia en situación de vulnerabilidad tenga acceso a oportunidades dignas de desarrollo. Trabajamos día a día para construir comunidades más justas, solidarias e inclusivas en la provincia de Esmeraldas, donde la esperanza y la acción colectiva sean el motor del cambio social.",
     stats: { value: "Ecuador", label: "Esmeraldas" },
   },
   {
     number: "04",
     title: "Nuestros Objetivos",
-    description: "Asegurarnos de que los grupos más vulnerables de la provincia de Esmeraldas estén seguros y puedan satisfacer sus necesidades más básicas creando oportunidades laborales. Eliminar la pobreza mediante el trabajo digno y la protección del medio ambiente.",
+    description: "Garantizar el bienestar de niños, adolescentes, familias y personas en situación de vulnerabilidad en la provincia de Esmeraldas mediante programas sociales, oportunidades laborales, protección del medio ambiente y acciones comunitarias. Buscamos eliminar la pobreza a través del trabajo digno, la inclusión social y la solidaridad de una red de voluntarios y donantes comprometidos.",
     stats: { value: "Valle Hermoso", label: "Simón Plata Torres" },
   },
 ];
@@ -185,8 +185,7 @@ export function FeaturesSection() {
               <p className={`text-xl text-foreground/70 leading-relaxed transition-all duration-1000 delay-200 mt-8 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}>
-                Somos una organización benéfica dedicada a brindar asistencia a los más necesitados. 
-                Si le gustaría contribuir con fondos o como voluntario, póngase en contacto con nosotros hoy mismo.
+                En FUNDECA trabajamos para mejorar la calidad de vida de niños, adolescentes, familias y personas en situación de vulnerabilidad. A través de programas sociales, actividades comunitarias, acompañamiento y el compromiso de nuestros voluntarios, buscamos generar oportunidades, promover la inclusión y brindar esperanza a quienes más lo necesitan. Creemos que cada acción solidaria puede transformar una vida y fortalecer el desarrollo de nuestras comunidades.
               </p>
             </div>
           </div>

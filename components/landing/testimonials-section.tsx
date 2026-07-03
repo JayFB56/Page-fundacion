@@ -5,30 +5,30 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "Actúa como si todas tus acciones marcaran la diferencia entre muchos. Que les parece 'Lo hacen'.",
+    quote: "Cada niño que sonríe, cada familia que encuentra esperanza, cada comunidad que se fortalece: esa es la verdadera transformación que impulsamos día a día en FUNDECA.",
     author: "Dr. Damian Vera Valencia",
     role: "Fundador",
     company: "FUNDACION FUNDECA",
     metric: { value: "2019", label: "Año de fundación" },
   },
   {
-    quote: "Hemos trabajado tiempo completo para expandir nuestras causas y ayudar a quienes lo necesitan. Su cooperación ayuda a mejorar la comunidad.",
+    quote: "Trabajamos incansablemente para que cada niño, adolescente y familia en situación de vulnerabilidad encuentre en FUNDECA una mano amiga, una oportunidad y un motivo para seguir adelante.",
     author: "FUNDECA",
     role: "Fundación Emprende con Amor",
     company: "Ecuador",
     metric: { value: "Esmeraldas", label: "Ubicación" },
   },
   {
-    quote: "Apoyamos a emprendedores a que saquen adelante sus emprendimientos. Recurrimos a padrinos o donantes que apadrinen a un emprendedor en Ecuador.",
+    quote: "Apadrinar a un niño o a una familia no solo transforma su realidad, sino que nos transforma a nosotros. En FUNDECA cada donación y cada voluntario construyen un futuro más solidario.",
     author: "FUNDECA",
     role: "Resolución Nro. 0041",
     company: "MIES",
     metric: { value: "Valle Hermoso", label: "Simón Plata Torres" },
   },
   {
-    quote: "Ayudar al prójimo nunca ha sido tan sencillo. Cada pequeño esfuerzo sirve de mucho. Todo tipo de ayuda es inmensamente apreciado.",
+    quote: "La solidaridad es el puente que une a quienes tienen la voluntad de ayudar con quienes más lo necesitan. En FUNDECA, cada acción cuenta y cada persona es importante.",
     author: "FUNDECA",
-    role: "Organización benéfica",
+    role: "Fundación social",
     company: "Esmeraldas - Ecuador",
     metric: { value: "Únete", label: "Sé parte del cambio" },
   },

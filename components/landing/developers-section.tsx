@@ -5,19 +5,19 @@ import { useState, useEffect, useRef } from "react";
 const news = [
   { 
     title: "Aniversario especial", 
-    description: "Celebramos un aniversario más de nuestra fundación. Ponemos al día a nuestros suscriptores con noticias acerca de nuestra organización, desde menciones en publicaciones locales hasta anuncios importantes."
+    description: "Celebramos un año más de compromiso con los niños, familias y comunidades de Esmeraldas. Nuevos programas, más voluntarios y el mismo amor por nuestra gente."
   },
   { 
     title: "Entrevista exclusiva", 
-    description: "Entrevista exclusiva con el fundador de nuestra organización local. Mostrando que hemos sido noticia, los artículos escritos sobre nosotros ayudan a mostrar nuestra fundación como una autoridad en nuestro medio."
+    description: "Conversamos sobre el impacto de nuestros programas sociales en la niñez y las familias vulnerables de Esmeraldas, y los planes de expansión de FUNDECA para llegar a más comunidades."
   },
   { 
     title: "Discusión: Donativos", 
-    description: "Lo que hay que saber sobre los donativos. Ponemos al día a nuestros suscriptores con noticias acerca de nuestra organización, desde menciones en publicaciones locales hasta anuncios."
+    description: "Cómo las donaciones a FUNDECA se transforman en alimentos, educación, empleo y esperanza para cientos de familias vulnerables en la provincia de Esmeraldas."
   },
   { 
     title: "Última colecta", 
-    description: "Nuestra última colecta recibió más de mil donaciones. Este artículo es una gran herramienta para compartir noticias con nuestros visitantes y publicar anuncios sobre nuestros eventos y recaudaciones de fondos."
+    description: "Gracias a la solidaridad de cientos de personas, nuestra última colecta benéfica llevó alimentos, ropa y útiles escolares a niños y familias vulnerables de Esmeraldas."
   },
 ];
 
@@ -84,9 +84,9 @@ export function DevelopersSection() {
           }`}
         >
           <p className="text-xl text-muted-foreground mb-12 leading-relaxed max-w-md">
-            ¡FUNDACION FUNDECA aparece en las noticias! Lea lo que se ha publicado sobre nuestras actividades
-            y causas. Dedicamos nuestro trabajo a alcanzar nuestras metas de beneficencia y nos enorgullece
-            cuando los medios toman nota de nuestros esfuerzos.
+            FUNDECA en las noticias. Descubre cómo nuestros programas y actividades están transformando la
+            vida de niños, familias y comunidades en Esmeraldas. Cada artículo refleja el compromiso y la
+            solidaridad de quienes creen en un futuro mejor para nuestra provincia.
           </p>
           <div className="grid grid-cols-2 gap-6">
             {news.map((item, index) => (
